@@ -1,15 +1,25 @@
 import "./App.css";
 import ProgressBar from "./ProgressBar";
+import { useState } from "react";
+import Home from "./Home";
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="app">
-      <h1>css-sandbox</h1>
+      {isLoaded ? (
+        <div>
+          <Home />
+        </div>
+      ) : (
+        <div>
+          <span>{"<ProgressBar />"}</span>
+          <ProgressBar />
 
-      <div>
-        <span>{"<ProgressBar />"}</span>
-        <ProgressBar />
-      </div>
+          <button onClick={() => setIsLoaded(true)}>Load</button>
+        </div>
+      )}
     </div>
   );
 }

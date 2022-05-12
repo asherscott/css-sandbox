@@ -7,7 +7,7 @@
 
 .progress {
   animation: loader var(--loading-time) ease infinite;
-  background: var(--green);
+  background: var(--highlight);
   height: var(--bar-size);
 }
 
@@ -24,8 +24,12 @@
     width: 75%;
   }
 
-  90% {
+  85% {
     width: 80%;
+  }
+
+  95% {
+    width: 100%;
   }
 
   100% {
