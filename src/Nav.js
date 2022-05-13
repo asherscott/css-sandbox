@@ -6,19 +6,19 @@ function Nav() {
 
   return (
     <div className={showNav ? "wrapper nav-wrap show-nav" : "wrapper nav-wrap"}>
-      <div className="nav-content">
+      <nav className="nav-content">
         <ul>
-          <li className="selected">Home</li>
-          <li>User</li>
-          <li>About</li>
-          <li>Settings</li>
+          <li className="selected link">Home</li>
+          <li className="link">User</li>
+          <li className="link">About</li>
+          <li className="link">Settings</li>
         </ul>
-      </div>
+      </nav>
       <button
         onClick={() => setShowNav(!showNav)}
         className={showNav ? "nav-icon hide-nav" : "nav-icon"}
       >
-        {showNav ? "+" : "|||"}
+        {showNav ? "<" : "|||"}
       </button>
     </div>
   );
