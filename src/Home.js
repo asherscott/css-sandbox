@@ -1,5 +1,13 @@
+import Nav from "./Nav";
+
 function Home() {
-  return <h1>css-sandbox</h1>;
+  return (
+    <div>
+      <h1>css-sandbox</h1>
+
+      <Nav />
+    </div>
+  );
 }
 
 export default Home;

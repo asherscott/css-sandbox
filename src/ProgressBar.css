@@ -6,7 +6,7 @@
 }
 
 .progress {
-  animation: loader var(--loading-time) ease infinite;
+  animation: loader var(--loading-time) ease forwards;
   background: var(--highlight);
   height: var(--bar-size);
 }

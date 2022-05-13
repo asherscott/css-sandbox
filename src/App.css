@@ -1,14 +1,16 @@
 :root {
   --highlight: #e60660;
   --base-1: #eef1f3;
-  --base-2: #414141;
+  --base-2: #2f2f2f;
   --base-3: #1c1c1c;
   --base-4: #141414;
 
   --bar-size: 10px;
   --bar-radius: 60px;
   --bar-background: rgba(0, 0, 0, 0.1);
-  --loading-time: 5s;
+  --loading-time: 3s;
+
+  --nav-width: 200px;
 }
 
 * {
